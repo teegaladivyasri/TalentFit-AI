@@ -1,0 +1,17 @@
+{
+  "programming_languages": [
+    "Python", "JavaScript", "TypeScript", "Java", "C++", "C#", "Go", "Rust", "Ruby", "PHP", "Swift", "Kotlin", "SQL", "R", "Scala"
+  ],
+  "frameworks_and_libraries": [
+    "React", "Node.js", "Express.js", "Next.js", "Django", "FastAPI", "Flask", "Spring Boot", "Angular", "Vue.js", "Tailwind CSS", "Redux", "PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy"
+  ],
+  "databases_and_storage": [
+    "PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Cassandra", "DynamoDB", "SQLite", "Snowflake", "BigQuery"
+  ],
+  "cloud_and_devops": [
+    "AWS", "Google Cloud Platform", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", "GitHub Actions", "Jenkins", "Linux", "Nginx", "Prometheus", "Grafana"
+  ],
+  "methodologies_and_tools": [
+    "Git", "Agile", "Scrum", "RESTful APIs", "GraphQL", "Microservices", "TDD", "System Design", "Object-Oriented Programming", "Data Structures & Algorithms"
+  ]
+}

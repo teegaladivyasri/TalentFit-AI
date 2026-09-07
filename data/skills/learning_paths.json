@@ -1,0 +1,382 @@
+{
+  "Python": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Python 3 syntax, data structures, and list comprehensions",
+      "Object-oriented programming (OOP) and design patterns",
+      "Asynchronous programming with asyncio",
+      "Virtual environments and package management with Poetry/Pipenv",
+      "Unit testing with pytest and mock frameworks"
+    ]
+  },
+  "Java": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Core Java fundamentals, collections, and streams API",
+      "Object-oriented design and SOLID principles",
+      "Multithreading and concurrency utilities",
+      "JVM internals, memory management, and garbage collection",
+      "Build tools (Maven/Gradle) and JUnit testing"
+    ]
+  },
+  "JavaScript": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "ES6+ modern syntax, destructuring, and spread operators",
+      "Asynchronous JavaScript: Promises and async/await",
+      "DOM manipulation and event-driven architecture",
+      "Closures, prototypes, and lexical scoping",
+      "Module systems (ESM vs CommonJS)"
+    ]
+  },
+  "TypeScript": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Static type definitions, interfaces, and type aliases",
+      "Generics, utility types, and conditional types",
+      "tsconfig.json compiler configuration and module resolution",
+      "Type narrowing, discrimination unions, and type guards",
+      "Integration with React, Node.js, and Express"
+    ]
+  },
+  "C++": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Modern C++ (C++17/C++20) idioms and best practices",
+      "Manual memory management, pointers, and smart pointers (unique_ptr, shared_ptr)",
+      "Standard Template Library (STL) containers and algorithms",
+      "RAII (Resource Acquisition Is Initialization) pattern",
+      "Build systems with CMake and profiling tools"
+    ]
+  },
+  "C#": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "C# syntax, LINQ queries, and lambda expressions",
+      "Object-oriented principles and asynchronous tasks (async/await)",
+      "Dependency injection and middleware configuration in .NET",
+      "Entity Framework Core ORM and database migrations",
+      "Unit testing with xUnit/NUnit"
+    ]
+  },
+  "Go": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Go idioms, pointers, slices, and maps",
+      "Goroutines, channels, and synchronization with sync package",
+      "Interface design and explicit error handling patterns",
+      "HTTP server implementation and routing standard library",
+      "Benchmarking and built-in testing tools"
+    ]
+  },
+  "Rust": {
+    "category": "Programming Languages",
+    "focus_areas": [
+      "Ownership model, borrowing, and lifetime management",
+      "Pattern matching, enums, and Result/Option types",
+      "Trait definitions and generic constraints",
+      "Concurrency and fearless multithreading",
+      "Cargo package manager and crates ecosystem"
+    ]
+  },
+  "React": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "Component lifecycle, JSX, and functional components",
+      "State management with React Hooks (useState, useEffect, useMemo, useCallback)",
+      "Global state architectures (Zustand, Redux Toolkit, Context API)",
+      "Component composition, custom hooks, and performance optimization",
+      "Component testing with Jest and React Testing Library"
+    ]
+  },
+  "Next.js": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "App Router vs Pages Router architecture",
+      "Server-Side Rendering (SSR) and Static Site Generation (SSG)",
+      "React Server Components (RSC) and streaming",
+      "API Routes and Server Actions",
+      "Image optimization, SEO metadata, and Core Web Vitals"
+    ]
+  },
+  "Vue.js": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "Vue 3 Composition API and reactivity system (ref, reactive)",
+      "Single-File Components (SFC) and template syntax",
+      "State management with Pinia",
+      "Routing with Vue Router",
+      "Custom directives and composables"
+    ]
+  },
+  "Angular": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "TypeScript-based modular architecture and standalone components",
+      "RxJS reactive streams and observables",
+      "Dependency injection and service providers",
+      "Template-driven vs Reactive Forms with validation",
+      "Angular CLI, routing, and lifecycle hooks"
+    ]
+  },
+  "HTML5": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "Semantic HTML elements and document hierarchy",
+      "Web accessibility (a11y) and ARIA attributes",
+      "Form validation attributes and input types",
+      "SEO meta tags and Open Graph protocol",
+      "HTML5 APIs (Canvas, Geolocation, Web Storage)"
+    ]
+  },
+  "CSS3": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "CSS Flexbox and CSS Grid layout systems",
+      "Responsive design with media queries and container queries",
+      "CSS custom properties (variables) and design tokens",
+      "Transitions, keyframe animations, and transform effects",
+      "CSS specificity, BEM naming, and box model mechanics"
+    ]
+  },
+  "Tailwind CSS": {
+    "category": "Web / Frontend",
+    "focus_areas": [
+      "Utility-first styling paradigms and responsive variants",
+      "Custom theme extensions in tailwind.config.js",
+      "Component extraction using @apply and composition",
+      "Dark mode implementation strategies",
+      "JIT (Just-in-Time) compiler and bundle optimization"
+    ]
+  },
+  "Node.js": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "Event loop architecture, non-blocking I/O, and EventEmitter",
+      "RESTful API design using Express or Fastify",
+      "Stream processing and filesystem operations",
+      "Authentication and authorization with JWT and sessions",
+      "Error handling, logging, and process management (PM2)"
+    ]
+  },
+  "FastAPI": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "Pydantic schema validation and request/response models",
+      "Asynchronous route handlers and concurrency handling",
+      "Dependency Injection system and sub-dependencies",
+      "Automatic OpenAPI / Swagger documentation generation",
+      "OAuth2 and JWT authentication implementation"
+    ]
+  },
+  "Django": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "MVT (Model-View-Template) architectural pattern",
+      "Django ORM query optimization and database migrations",
+      "Django REST Framework (DRF) serializers and viewsets",
+      "Built-in authentication, user management, and permissions",
+      "Middleware, signals, and security best practices"
+    ]
+  },
+  "Spring Boot": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "Spring IoC (Inversion of Control) and Dependency Injection",
+      "Spring Data JPA repositories and Hibernate ORM",
+      "RESTful controller development with Spring Web",
+      "Spring Security configuration, JWT, and OAuth2",
+      "Actuator endpoints, monitoring, and profiles"
+    ]
+  },
+  "REST API": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "REST architectural constraints and HTTP verb semantics (GET, POST, PUT, PATCH, DELETE)",
+      "Standard HTTP status codes and uniform error payloads",
+      "Pagination, filtering, sorting, and versioning strategies",
+      "OpenAPI 3.0 / Swagger contract specifications",
+      "Rate limiting, API key security, and CORS policies"
+    ]
+  },
+  "GraphQL": {
+    "category": "Backend / APIs",
+    "focus_areas": [
+      "Schema Definition Language (SDL), Queries, Mutations, and Subscriptions",
+      "Resolver execution and context passing",
+      "Solving N+1 problem with DataLoader",
+      "Apollo Server and Apollo Client integration",
+      "Schema federation and security best practices"
+    ]
+  },
+  "SQL": {
+    "category": "Databases",
+    "focus_areas": [
+      "Relational data modeling and schema normalization (1NF, 2NF, 3NF)",
+      "Complex SQL joins (INNER, LEFT, RIGHT, FULL OUTER) and subqueries",
+      "Window functions (ROW_NUMBER, RANK, LAG, LEAD) and aggregations",
+      "B-tree indexing strategies and EXPLAIN query plan analysis",
+      "ACID transactions, isolation levels, and foreign key constraints"
+    ]
+  },
+  "PostgreSQL": {
+    "category": "Databases",
+    "focus_areas": [
+      "PostgreSQL-specific data types (JSONB, UUID, Arrays)",
+      "Advanced indexing (B-Tree, GIN, GiST, Partial Indexes)",
+      "Query execution plans (EXPLAIN ANALYZE) and vacuuming",
+      "Stored procedures, triggers, and PL/pgSQL",
+      "Connection pooling with PgBouncer and replication basics"
+    ]
+  },
+  "MySQL": {
+    "category": "Databases",
+    "focus_areas": [
+      "InnoDB storage engine architecture and transaction logs",
+      "Index optimization, composite indexes, and slow query logs",
+      "Replication topologies (Master-Replica) and high availability",
+      "Stored procedures, views, and character set configurations",
+      "Backup and point-in-time recovery strategies"
+    ]
+  },
+  "MongoDB": {
+    "category": "Databases",
+    "focus_areas": [
+      "Document data modeling (embedding vs referencing)",
+      "MongoDB Aggregation Framework pipelines ($match, $group, $project, $lookup)",
+      "Index creation (Compound, TTL, Text, Multikey)",
+      "Mongoose ODM schema validation and middleware in Node.js",
+      "Replica sets, sharding, and write concern configurations"
+    ]
+  },
+  "Redis": {
+    "category": "Databases",
+    "focus_areas": [
+      "Redis core data structures (Strings, Hashes, Lists, Sets, Sorted Sets)",
+      "Caching strategies: Cache-Aside, Write-Through, and TTL expiration",
+      "Pub/Sub messaging and Redis Streams",
+      "Rate limiting algorithms (Sliding Window, Token Bucket)",
+      "Persistence mechanisms (RDB snapshots vs AOF logs)"
+    ]
+  },
+  "AWS": {
+    "category": "Cloud Platforms & Services",
+    "focus_areas": [
+      "Core compute & storage (EC2, S3, Elastic Block Store)",
+      "Serverless architecture with AWS Lambda and API Gateway",
+      "Managed databases: Amazon RDS, Aurora, and DynamoDB",
+      "Networking & security: VPC, subnets, security groups, and IAM policies",
+      "Container services: Amazon ECS, EKS, and ECR"
+    ]
+  },
+  "Azure": {
+    "category": "Cloud Platforms & Services",
+    "focus_areas": [
+      "Azure Virtual Machines and Azure App Services",
+      "Serverless compute with Azure Functions",
+      "Azure SQL Database and Cosmos DB",
+      "Azure Active Directory (Entra ID) and RBAC roles",
+      "Azure Virtual Networks and Resource Groups"
+    ]
+  },
+  "GCP": {
+    "category": "Cloud Platforms & Services",
+    "focus_areas": [
+      "Compute Engine, Cloud Run, and Cloud Functions",
+      "Cloud Storage, Cloud SQL, and Cloud Spanner",
+      "Google Kubernetes Engine (GKE) cluster management",
+      "IAM permissions and Service Account key management",
+      "BigQuery data warehouse fundamentals"
+    ]
+  },
+  "Docker": {
+    "category": "DevOps & Infrastructure",
+    "focus_areas": [
+      "Dockerfile instructions, multi-stage builds, and image optimization",
+      "Container lifecycle: run, exec, stop, rm, and inspection",
+      "Docker Compose multi-service container orchestration",
+      "Docker networking (bridge, host, overlay) and volume management",
+      "Security scanning and rootless container best practices"
+    ]
+  },
+  "Kubernetes": {
+    "category": "DevOps & Infrastructure",
+    "focus_areas": [
+      "Core workload objects: Pods, Deployments, ReplicaSets, StatefulSets",
+      "Kubernetes networking: Services (ClusterIP, NodePort, LoadBalancer), Ingress",
+      "Configuration management: ConfigMaps and Secrets",
+      "Resource limits, requests, and Horizontal Pod Autoscaling (HPA)",
+      "Helm package manager for chart templating and deployment"
+    ]
+  },
+  "CI/CD": {
+    "category": "DevOps & Infrastructure",
+    "focus_areas": [
+      "Continuous Integration pipeline design (automated testing, linting, build verification)",
+      "Continuous Delivery & Deployment strategies (Blue-Green, Canary, Rolling updates)",
+      "Artifact repository management and semantic versioning",
+      "Secrets management and environment variable injection",
+      "GitHub Actions / GitLab CI pipeline syntax and workflow triggers"
+    ]
+  },
+  "Git": {
+    "category": "Version Control",
+    "focus_areas": [
+      "Core workflows: branching, merging, rebasing, and cherry-picking",
+      "Merge conflict resolution and interactive rebase (git rebase -i)",
+      "Git worktrees, stashing, and commit history cleanup",
+      "Pull request (PR) reviews and Gitflow / Trunk-based branching strategies",
+      "Git hooks for pre-commit validation"
+    ]
+  },
+  "Machine Learning": {
+    "category": "Data / AI / ML",
+    "focus_areas": [
+      "Supervised vs Unsupervised learning algorithms (Regression, Classification, Clustering)",
+      "Feature engineering, categorical encoding, and feature scaling",
+      "Model evaluation metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC",
+      "Cross-validation techniques and hyperparameter tuning (GridSearch, Optuna)",
+      "Scikit-learn pipeline construction and model serialization"
+    ]
+  },
+  "Deep Learning": {
+    "category": "Data / AI / ML",
+    "focus_areas": [
+      "Neural network fundamentals, activation functions, and backpropagation",
+      "Loss functions (Cross-Entropy, MSE) and optimization algorithms (Adam, SGD)",
+      "Convolutional Neural Networks (CNN) for computer vision",
+      "Recurrent Neural Networks (RNN, LSTM) and Transformers",
+      "Framework development using PyTorch or TensorFlow"
+    ]
+  },
+  "NLP": {
+    "category": "Data / AI / ML",
+    "focus_areas": [
+      "Text preprocessing: tokenization, lemmatization, stopword removal, and regex",
+      "Vector representations: Bag of Words, TF-IDF, Word2Vec, and dense embeddings",
+      "Named Entity Recognition (NER), Part-of-Speech (POS) tagging, and text classification",
+      "Transformer architectures (BERT, RoBERTa, T5) for sequence modeling",
+      "Libraries: HuggingFace Transformers, NLTK, spaCy, and Scikit-Learn"
+    ]
+  },
+  "RAG": {
+    "category": "Data / AI / ML",
+    "focus_areas": [
+      "Retrieval-Augmented Generation architectural patterns and chunking strategies",
+      "Vector database indexing and similarity search (Cosine, Dot Product)",
+      "Embedding model selection and dimensional representation",
+      "Context window optimization, re-ranking, and prompt grounding",
+      "Evaluation metrics: context relevance, faithfulness, and answer relevance"
+    ]
+  },
+  "System Design": {
+    "category": "Professional / Engineering Skills",
+    "focus_areas": [
+      "Scalability principles: Vertical vs Horizontal scaling and load balancing",
+      "Database sharding, partitioning, replication, and CAP theorem trade-offs",
+      "Caching tiers (CDN, Reverse Proxy, In-Memory caching with Redis)",
+      "Asynchronous messaging, message queues (RabbitMQ, Kafka), and decoupling",
+      "Microservice architecture vs Monoliths, API gateways, and resiliency patterns"
+    ]
+  }
+}

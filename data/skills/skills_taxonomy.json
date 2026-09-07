@@ -1,0 +1,578 @@
+{
+  "categories": [
+    "Programming Languages",
+    "Web / Frontend",
+    "Backend / APIs",
+    "Databases",
+    "Cloud Platforms & Services",
+    "DevOps & Infrastructure",
+    "Data / AI / ML",
+    "Version Control",
+    "Security",
+    "Professional / Engineering Skills"
+  ],
+  "skills": [
+    {
+      "canonical_name": "Python",
+      "category": "Programming Languages",
+      "aliases": ["python", "python3", "python 3", "python 3.x", "py"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Java",
+      "category": "Programming Languages",
+      "aliases": ["java", "core java", "java 8", "java 11", "java 17", "java 21"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "JavaScript",
+      "category": "Programming Languages",
+      "aliases": ["javascript", "ecmascript", "es6", "es2020"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "TypeScript",
+      "category": "Programming Languages",
+      "aliases": ["typescript", "ts"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "C",
+      "category": "Programming Languages",
+      "aliases": ["c language", "ansi c"],
+      "case_sensitive": true,
+      "priority": "core"
+    },
+    {
+      "canonical_name": "C++",
+      "category": "Programming Languages",
+      "aliases": ["c++", "cpp", "cplusplus", "c++11", "c++14", "c++17", "c++20"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "C#",
+      "category": "Programming Languages",
+      "aliases": ["c#", "csharp", "c sharp"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Go",
+      "category": "Programming Languages",
+      "aliases": ["golang", "go language", "go lang"],
+      "case_sensitive": true,
+      "priority": "core"
+    },
+    {
+      "canonical_name": "R",
+      "category": "Programming Languages",
+      "aliases": ["r language", "r programming"],
+      "case_sensitive": true,
+      "priority": "core"
+    },
+    {
+      "canonical_name": "PHP",
+      "category": "Programming Languages",
+      "aliases": ["php", "php7", "php8"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Ruby",
+      "category": "Programming Languages",
+      "aliases": ["ruby"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Kotlin",
+      "category": "Programming Languages",
+      "aliases": ["kotlin"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Swift",
+      "category": "Programming Languages",
+      "aliases": ["swift"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Rust",
+      "category": "Programming Languages",
+      "aliases": ["rust", "rustlang"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Scala",
+      "category": "Programming Languages",
+      "aliases": ["scala"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "HTML",
+      "category": "Web / Frontend",
+      "aliases": ["html", "html5"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "CSS",
+      "category": "Web / Frontend",
+      "aliases": ["css", "css3"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "React",
+      "category": "Web / Frontend",
+      "aliases": ["react", "react.js", "reactjs", "react js"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "React Native",
+      "category": "Web / Frontend",
+      "aliases": ["react native", "react-native"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "Angular",
+      "category": "Web / Frontend",
+      "aliases": ["angular", "angular.js", "angularjs", "angular 2+"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Vue.js",
+      "category": "Web / Frontend",
+      "aliases": ["vue.js", "vuejs", "vue", "vue 3"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Next.js",
+      "category": "Web / Frontend",
+      "aliases": ["next.js", "nextjs", "next js"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Node.js",
+      "category": "Web / Frontend",
+      "aliases": ["node.js", "nodejs", "node js"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Express.js",
+      "category": "Web / Frontend",
+      "aliases": ["express.js", "expressjs", "express js", "express framework"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Tailwind CSS",
+      "category": "Web / Frontend",
+      "aliases": ["tailwind css", "tailwind", "tailwindcss"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Redux",
+      "category": "Web / Frontend",
+      "aliases": ["redux", "redux toolkit", "rtk"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Svelte",
+      "category": "Web / Frontend",
+      "aliases": ["svelte", "sveltekit"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "FastAPI",
+      "category": "Backend / APIs",
+      "aliases": ["fastapi", "fast api"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Django",
+      "category": "Backend / APIs",
+      "aliases": ["django", "django rest framework", "drf"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Flask",
+      "category": "Backend / APIs",
+      "aliases": ["flask"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Spring Boot",
+      "category": "Backend / APIs",
+      "aliases": ["spring boot", "springboot", "spring framework", "spring"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": ".NET",
+      "category": "Backend / APIs",
+      "aliases": [".net", "dotnet", ".net core", "asp.net", "asp.net core"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "REST API",
+      "category": "Backend / APIs",
+      "aliases": ["rest api", "restful api", "restful apis", "rest apis", "restful web services"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "GraphQL",
+      "category": "Backend / APIs",
+      "aliases": ["graphql", "graph ql", "apollo graphql"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "gRPC",
+      "category": "Backend / APIs",
+      "aliases": ["grpc", "protocol buffers", "protobuf"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "Microservices",
+      "category": "Backend / APIs",
+      "aliases": ["microservices", "microservice architecture", "micro-services"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "SQL",
+      "category": "Databases",
+      "aliases": ["sql", "structured query language", "relational database", "rdbms"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "MySQL",
+      "category": "Databases",
+      "aliases": ["mysql"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "PostgreSQL",
+      "category": "Databases",
+      "aliases": ["postgresql", "postgres", "psql"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "MongoDB",
+      "category": "Databases",
+      "aliases": ["mongodb", "mongo"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "SQLite",
+      "category": "Databases",
+      "aliases": ["sqlite", "sqlite3"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Redis",
+      "category": "Databases",
+      "aliases": ["redis"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Oracle Database",
+      "category": "Databases",
+      "aliases": ["oracle database", "oracle db", "oracle sql", "pl/sql", "plsql"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Microsoft SQL Server",
+      "category": "Databases",
+      "aliases": ["microsoft sql server", "ms sql server", "mssql", "t-sql", "tsql"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Cassandra",
+      "category": "Databases",
+      "aliases": ["cassandra", "apache cassandra"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "Elasticsearch",
+      "category": "Databases",
+      "aliases": ["elasticsearch", "elastic search", "elk stack"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "DynamoDB",
+      "category": "Databases",
+      "aliases": ["dynamodb", "amazon dynamodb", "aws dynamodb"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "AWS",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["aws", "amazon web services"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Microsoft Azure",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["azure", "microsoft azure", "azure cloud"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Google Cloud Platform",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["gcp", "google cloud platform", "google cloud"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "AWS EC2",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["aws ec2", "ec2", "amazon ec2"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "AWS S3",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["aws s3", "s3", "amazon s3"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "AWS RDS",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["aws rds", "rds", "amazon rds"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "AWS Lambda",
+      "category": "Cloud Platforms & Services",
+      "aliases": ["aws lambda", "lambda", "serverless lambda"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Docker",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["docker", "dockerfile", "docker-compose", "docker compose"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Kubernetes",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["kubernetes", "k8s"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Terraform",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["terraform", "tf"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Jenkins",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["jenkins", "jenkins ci"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "GitHub Actions",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["github actions", "gh actions"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "CI/CD",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["ci/cd", "ci cd", "cicd", "continuous integration", "continuous deployment", "continuous delivery"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Linux",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["linux", "unix", "ubuntu", "debian", "centos", "redhat", "bash", "shell scripting"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Nginx",
+      "category": "DevOps & Infrastructure",
+      "aliases": ["nginx"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Pandas",
+      "category": "Data / AI / ML",
+      "aliases": ["pandas"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "NumPy",
+      "category": "Data / AI / ML",
+      "aliases": ["numpy"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "scikit-learn",
+      "category": "Data / AI / ML",
+      "aliases": ["scikit-learn", "scikit learn", "sklearn"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "TensorFlow",
+      "category": "Data / AI / ML",
+      "aliases": ["tensorflow", "tf"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "PyTorch",
+      "category": "Data / AI / ML",
+      "aliases": ["pytorch", "torch"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Machine Learning",
+      "category": "Data / AI / ML",
+      "aliases": ["machine learning", "ml"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Deep Learning",
+      "category": "Data / AI / ML",
+      "aliases": ["deep learning", "dl", "neural networks"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "NLP",
+      "category": "Data / AI / ML",
+      "aliases": ["nlp", "natural language processing", "text mining"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Generative AI",
+      "category": "Data / AI / ML",
+      "aliases": ["generative ai", "genai", "gen ai"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "LLM",
+      "category": "Data / AI / ML",
+      "aliases": ["llm", "llms", "large language models", "large language model"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "RAG",
+      "category": "Data / AI / ML",
+      "aliases": ["RAG", "retrieval-augmented generation", "retrieval augmented generation"],
+      "case_sensitive": true,
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Git",
+      "category": "Version Control",
+      "aliases": ["git", "version control"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "GitHub",
+      "category": "Version Control",
+      "aliases": ["github"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "GitLab",
+      "category": "Version Control",
+      "aliases": ["gitlab"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Bitbucket",
+      "category": "Version Control",
+      "aliases": ["bitbucket"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "Cybersecurity",
+      "category": "Security",
+      "aliases": ["cybersecurity", "cyber security", "information security", "infosec"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Network Security",
+      "category": "Security",
+      "aliases": ["network security", "firewall", "vpn security"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "OWASP",
+      "category": "Security",
+      "aliases": ["owasp", "owasp top 10"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Penetration Testing",
+      "category": "Security",
+      "aliases": ["penetration testing", "pen testing", "pentest"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Ethical Hacking",
+      "category": "Security",
+      "aliases": ["ethical hacking"],
+      "priority": "secondary"
+    },
+    {
+      "canonical_name": "Cryptography",
+      "category": "Security",
+      "aliases": ["cryptography", "encryption", "tls/ssl", "ssl/tls"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "OAuth",
+      "category": "Security",
+      "aliases": ["oauth", "oauth2", "oauth 2.0", "oauth2.0", "jwt", "json web tokens"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Agile",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["agile", "agile methodology", "agile development"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Scrum",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["scrum", "sprints", "scrum master"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "SDLC",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["sdlc", "software development life cycle", "software development lifecycle"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Unit Testing",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["unit testing", "unit tests", "pytest", "junit", "tdd", "test-driven development"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Test Automation",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["test automation", "automated testing", "selenium", "cypress", "playwright"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Debugging",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["debugging", "troubleshooting"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "Problem Solving",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["problem solving", "analytical thinking", "critical thinking"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "System Design",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["system design", "software architecture", "distributed systems"],
+      "priority": "core"
+    },
+    {
+      "canonical_name": "OOP",
+      "category": "Professional / Engineering Skills",
+      "aliases": ["oop", "object-oriented programming", "object oriented programming"],
+      "priority": "core"
+    }
+  ]
+}

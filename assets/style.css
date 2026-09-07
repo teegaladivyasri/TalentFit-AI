@@ -1,0 +1,830 @@
+/* ==========================================================================
+   TALENTFIT AI — PRODUCTION DESIGN SYSTEM & STYLESHEET
+   Modern, Professional, SaaS-Grade Recruitment & Career Matching Platform
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Core Typography & Spacing Tokens */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+  
+  /* Brand Palette Tokens */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-active: #1e40af;
+  --primary-subtle: #eff6ff;
+  --primary-border: #bfdbfe;
+  
+  --success: #10b981;
+  --success-hover: #059669;
+  --success-subtle: #ecfdf5;
+  --success-border: #a7f3d0;
+  --success-text: #065f46;
+  
+  --warning: #f59e0b;
+  --warning-hover: #d97706;
+  --warning-subtle: #fffbeb;
+  --warning-border: #fde68a;
+  --warning-text: #92400e;
+  
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+  --danger-subtle: #fef2f2;
+  --danger-border: #fecdd3;
+  --danger-text: #991b1b;
+  
+  --info: #0ea5e9;
+  --info-subtle: #f0f9ff;
+  --info-border: #bae6fd;
+  --info-text: #0369a1;
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME DESIGN TOKENS
+   -------------------------------------------------------------------------- */
+[data-theme="light"], .stApp[data-theme="light"], body {
+  --bg-app: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f1f5f9;
+  --bg-surface-hover: #f8fafc;
+  --bg-surface-active: #e2e8f0;
+  
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --border-focus: #2563eb;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+  --text-inverse: #ffffff;
+  
+  --btn-bg: #ffffff;
+  --btn-text: #0f172a;
+  --btn-border: #cbd5e1;
+  --btn-hover-bg: #f8fafc;
+  --btn-hover-border: #2563eb;
+  
+  --tag-matched-bg: #ecfdf5;
+  --tag-matched-border: #a7f3d0;
+  --tag-matched-text: #065f46;
+  
+  --tag-missing-bg: #fff1f2;
+  --tag-missing-border: #fecdd3;
+  --tag-missing-text: #9f1239;
+  
+  --tag-good-bg: #eff6ff;
+  --tag-good-border: #bfdbfe;
+  --tag-good-text: #1e40af;
+  
+  --tag-warn-bg: #fef3c7;
+  --tag-warn-border: #fde68a;
+  --tag-warn-text: #92400e;
+
+  --tag-bad-bg: #fff1f2;
+  --tag-bad-border: #fecdd3;
+  --tag-bad-text: #9f1239;
+  
+  --tag-neutral-bg: #f1f5f9;
+  --tag-neutral-border: #e2e8f0;
+  --tag-neutral-text: #334155;
+  
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME DESIGN TOKENS
+   -------------------------------------------------------------------------- */
+[data-theme="dark"], .stApp[data-theme="dark"] {
+  --bg-app: #0b0f19;
+  --bg-surface: #111827;
+  --bg-surface-alt: #1a2234;
+  --bg-surface-hover: #1f293d;
+  --bg-surface-active: #28354e;
+  
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --border-focus: #60a5fa;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --text-inverse: #0f172a;
+  
+  --btn-bg: #1a2234;
+  --btn-text: #f8fafc;
+  --btn-border: #334155;
+  --btn-hover-bg: #28354e;
+  --btn-hover-border: #60a5fa;
+  
+  --tag-matched-bg: #064e3b;
+  --tag-matched-border: #047857;
+  --tag-matched-text: #6ee7b7;
+  
+  --tag-missing-bg: #881337;
+  --tag-missing-border: #be123c;
+  --tag-missing-text: #fecdd3;
+  
+  --tag-good-bg: #1e3a8a;
+  --tag-good-border: #2563eb;
+  --tag-good-text: #93c5fd;
+
+  --tag-warn-bg: #78350f;
+  --tag-warn-border: #92400e;
+  --tag-warn-text: #fde68a;
+
+  --tag-bad-bg: #881337;
+  --tag-bad-border: #be123c;
+  --tag-bad-text: #fecdd3;
+  
+  --tag-neutral-bg: #1e293b;
+  --tag-neutral-border: #334155;
+  --tag-neutral-text: #cbd5e1;
+  
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL STREAMLIT OVERRIDES
+   -------------------------------------------------------------------------- */
+.stApp,
+[data-testid="stAppViewContainer"],
+section.main,
+.block-container {
+  background-color: var(--bg-app) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans) !important;
+}
+
+header[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"] {
+  background: transparent !important;
+  z-index: 10 !important;
+}
+
+/* Suppress unwanted default sidebar and collapse control */
+[data-testid="stSidebar"],
+[data-testid="stSidebarNav"],
+[data-testid="collapsedControl"] {
+  display: none !important;
+}
+
+.block-container {
+  padding-top: 1.25rem !important;
+  padding-bottom: 3.5rem !important;
+  max-width: 1180px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans) !important;
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+p, span, label, div {
+  font-family: var(--font-sans) !important;
+}
+
+/* --------------------------------------------------------------------------
+   SYSTEMATIC HIGH-CONTRAST BUTTON SYSTEM (LIGHT & DARK MODE READY)
+   -------------------------------------------------------------------------- */
+/* Standard / Secondary Button */
+.stButton > button,
+[data-testid="stBaseButton-secondary"],
+[data-testid="stDownloadButton"] > button {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0.5rem 1rem !important;
+  background-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border: 1px solid var(--btn-border) !important;
+  box-shadow: var(--shadow-xs) !important;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+}
+
+.stButton > button:hover,
+[data-testid="stBaseButton-secondary"]:hover,
+[data-testid="stDownloadButton"] > button:hover {
+  background-color: var(--btn-hover-bg) !important;
+  border-color: var(--btn-hover-border) !important;
+  color: var(--btn-text) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.stButton > button:active,
+[data-testid="stBaseButton-secondary"]:active {
+  background-color: var(--bg-surface-active) !important;
+  transform: translateY(1px) !important;
+}
+
+.stButton > button:focus-visible,
+[data-testid="stBaseButton-secondary"]:focus-visible {
+  outline: 2px solid var(--border-focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* Primary Button */
+.stButton > button[kind="primary"],
+[data-testid="stBaseButton-primary"],
+[data-testid="stFormSubmitButton"] > button {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--primary) !important;
+  box-shadow: 0 1px 2px 0 rgba(37, 99, 235, 0.3) !important;
+}
+
+.stButton > button[kind="primary"]:hover,
+[data-testid="stBaseButton-primary"]:hover,
+[data-testid="stFormSubmitButton"] > button:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px 0 rgba(37, 99, 235, 0.4) !important;
+}
+
+.stButton > button[kind="primary"]:active,
+[data-testid="stBaseButton-primary"]:active {
+  background-color: var(--primary-active) !important;
+  transform: translateY(1px) !important;
+}
+
+/* --------------------------------------------------------------------------
+   FORM INPUTS, TEXTAREAS & SELECTORS
+   -------------------------------------------------------------------------- */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: var(--radius-sm) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.875rem !important;
+  padding: 0.55rem 0.75rem !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+  border-color: var(--border-focus) !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2) !important;
+  outline: none !important;
+}
+
+.stSelectbox > div > div,
+[data-baseweb="select"] > div {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+[data-testid="stFileUploader"] section {
+  background-color: var(--bg-surface-alt) !important;
+  border: 1px dashed var(--border-strong) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 0.85rem 1rem !important;
+  transition: border-color 0.15s ease !important;
+}
+
+[data-testid="stFileUploader"] section:hover {
+  border-color: var(--primary) !important;
+}
+
+/* Fix Streamlit file uploader icon ligature text duplication ("uploadUpload") */
+[data-testid="stFileUploader"] button span[data-testid="stIconMaterial"],
+[data-testid="stFileUploader"] button .material-symbols-rounded,
+[data-testid="stFileUploader"] button span.material-symbols-rounded {
+  display: none !important;
+}
+
+/* Hide default Streamlit 200MB text that contradicts 10MB security limit */
+[data-testid="stFileUploaderDropzoneInstructions"] small,
+[data-testid="stFileUploaderDropzoneInstructions"] div:nth-child(2),
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploaderDropzone"] small,
+[data-testid="stFileUploaderDropzoneInstructions"] span:last-child {
+  display: none !important;
+}
+
+/* Tabs Styling */
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+  border-bottom: 1px solid var(--border-subtle) !important;
+  gap: 8px !important;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab"] {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  color: var(--text-secondary) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0 !important;
+}
+
+[data-testid="stTabs"] [aria-selected="true"] {
+  color: var(--primary) !important;
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   NAVBAR & PRODUCT BRANDING
+   -------------------------------------------------------------------------- */
+.tf-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.tf-brand-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  background-color: var(--tag-good-bg);
+  color: var(--tag-good-text);
+  border: 1px solid var(--tag-good-border);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.tf-nav-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  background-color: var(--bg-surface-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   HERO & LANDING PAGE COMPONENTS
+   -------------------------------------------------------------------------- */
+.tf-hero {
+  padding: 2.25rem 0 1.25rem 0;
+  text-align: left;
+}
+
+.tf-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background-color: var(--primary-subtle);
+  border: 1px solid var(--primary-border);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .tf-hero-badge {
+  background-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #93c5fd;
+}
+
+.tf-hero-title {
+  font-size: 2.35rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.tf-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin-bottom: 1.75rem;
+}
+
+.tf-preview-frame {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+/* --------------------------------------------------------------------------
+   CARDS & SURFACES
+   -------------------------------------------------------------------------- */
+.tf-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-xs);
+}
+
+.tf-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.tf-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.tf-card-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+/* Persona Selection Cards on Home */
+.tf-persona-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tf-persona-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.tf-persona-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.tf-persona-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.tf-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+}
+
+.tf-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.45rem;
+}
+
+.tf-check-bullet {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Platform Highlights Strip */
+.tf-highlights-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-xs);
+}
+
+.tf-highlight-item {
+  text-align: center;
+}
+
+.tf-highlight-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.tf-highlight-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   METRIC & SCORE TILES
+   -------------------------------------------------------------------------- */
+.tf-metric-tile {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.15rem;
+  text-align: left;
+  box-shadow: var(--shadow-xs);
+  min-height: 104px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tf-metric-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.tf-metric-value {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.tf-metric-subtext {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 0.4rem;
+}
+
+/* Overall Match Score Banner */
+.tf-score-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* --------------------------------------------------------------------------
+   SKILL TAGS & BADGES
+   -------------------------------------------------------------------------- */
+.tf-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tf-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  line-height: 1.25;
+}
+
+.tf-tag-matched {
+  background-color: var(--tag-matched-bg);
+  border: 1px solid var(--tag-matched-border);
+  color: var(--tag-matched-text);
+}
+
+.tf-tag-missing {
+  background-color: var(--tag-missing-bg);
+  border: 1px solid var(--tag-missing-border);
+  color: var(--tag-missing-text);
+}
+
+.tf-tag-good {
+  background-color: var(--tag-good-bg);
+  border: 1px solid var(--tag-good-border);
+  color: var(--tag-good-text);
+}
+
+.tf-tag-neutral {
+  background-color: var(--tag-neutral-bg);
+  border: 1px solid var(--tag-neutral-border);
+  color: var(--tag-neutral-text);
+}
+
+/* Priority Badges */
+.tf-priority-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tf-priority-high {
+  background-color: var(--tag-missing-bg);
+  color: var(--tag-missing-text);
+  border: 1px solid var(--tag-missing-border);
+}
+
+.tf-priority-medium {
+  background-color: var(--warning-subtle);
+  color: var(--warning-text);
+  border: 1px solid var(--warning-border);
+}
+
+.tf-priority-low {
+  background-color: var(--tag-good-bg);
+  color: var(--tag-good-text);
+  border: 1px solid var(--tag-good-border);
+}
+
+/* Status Badges */
+.tf-status-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+}
+
+.tf-status-recommended {
+  background-color: var(--tag-matched-bg);
+  color: var(--tag-matched-text);
+  border: 1px solid var(--tag-matched-border);
+}
+
+.tf-status-good {
+  background-color: var(--tag-good-bg);
+  color: var(--tag-good-text);
+  border: 1px solid var(--tag-good-border);
+}
+
+.tf-status-review {
+  background-color: var(--warning-subtle);
+  color: var(--warning-text);
+  border: 1px solid var(--warning-border);
+}
+
+.tf-status-low {
+  background-color: var(--tag-missing-bg);
+  color: var(--tag-missing-text);
+  border: 1px solid var(--tag-missing-border);
+}
+
+/* --------------------------------------------------------------------------
+   ATS COMPATIBILITY BREAKDOWN
+   -------------------------------------------------------------------------- */
+.tf-ats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tf-ats-row:last-child {
+  border-bottom: none;
+}
+
+.tf-ats-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.tf-ats-detail {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.tf-ats-score {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   CALLOUTS & ADVISORIES
+   -------------------------------------------------------------------------- */
+.tf-callout {
+  background-color: var(--bg-surface-alt);
+  border: 1px solid var(--border-subtle);
+  border-left: 3.5px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.1rem;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.tf-callout-warning {
+  border-left-color: var(--warning);
+}
+
+.tf-callout-success {
+  border-left-color: var(--success);
+}
+
+/* Step Number indicator */
+.tf-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   TABLES & COMPARISON MATRIX
+   -------------------------------------------------------------------------- */
+.tf-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.tf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.tf-table th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-surface-alt);
+  color: var(--text-secondary);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tf-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.tf-table tr:last-child td {
+  border-bottom: none;
+}
